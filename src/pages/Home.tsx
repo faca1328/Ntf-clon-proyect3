@@ -26,11 +26,11 @@ export const Home = () => {
     if (email && password) {
       try {
         await createUserWithEmailAndPassword(auth, email, password)
-        .then(()=> {
-          console.log('Usuario creado exitosamente');
-          setFormValue({ email: "", password: "" })
-          navigate(`/login`)
-        })
+          .then(() => {
+            console.log('Usuario creado exitosamente');
+            setFormValue({ email: "", password: "" })
+            navigate(`/login`)
+          })
       } catch (err) {
         console.log(err);
       }
@@ -83,7 +83,7 @@ export const Home = () => {
 
         <div>
           <h5 className="font-medium"> Already Registered ? </h5>
-          <button className="mt-2 btn-primary" onClick={()=>navigate(`/login`)}> Login </button>
+          <button className="mt-2 btn-primary" onClick={() => navigate(`/login`)}> Login </button>
         </div>
       </div>
     </div>

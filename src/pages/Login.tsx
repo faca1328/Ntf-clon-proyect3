@@ -47,7 +47,7 @@ export const Login = () => {
       </div>
       <form className="justify-center grid absolute inset-x-0 custom-top" onSubmit={handleSignIn}>
         <h5 className="text-lg font-medium bg-black bg-opacity-50 rounded-full px-2 text-white custom-w">
-          Welcome
+          Welcome, please login
         </h5>
         <hr />
         <input

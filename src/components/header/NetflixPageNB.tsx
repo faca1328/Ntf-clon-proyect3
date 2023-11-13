@@ -21,10 +21,10 @@ export const NetflixPageNB:React.FC<Props> = ({isScrolled}) => {
             <img className=" w-fit max-h-14 " src={Logoimg} alt="" />
 
             <ul className="flex flex-auto gap-5 text-white ml-5">
-                {NETFLIX_LINKS.map(({ name, link }) => {
+                {NETFLIX_LINKS.map(({ name }) => {
                     return (
                         <li key={name} className="hover:text-gray-300 transition-colors">
-                            <Link to={link}>{name}</Link>
+                            <Link to={`/netflix`}>{name}</Link>
                         </li>
                     )
                 }
