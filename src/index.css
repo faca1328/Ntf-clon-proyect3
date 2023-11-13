@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn-primary {
+      @apply px-4 py-1 border-none bg-red-600 text-white rounded 
+    }
+    .home-input {
+      @apply p-5 bg-black opacity-70 rounded border-solid border-black
+    }
+  }
+
+  .custom-top{
+    top: 30%;
+  }
+
+  .custom-w{
+    width: 30vw;
+  }
+
+  .disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+
+  .min-w-card {
+    min-width: 130rem;
+  }
